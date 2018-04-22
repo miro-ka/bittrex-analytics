@@ -6,7 +6,7 @@ from report.report import Report
 
 logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 logger = logging.getLogger(__name__)
-report = Report("YOUR_EMAIL", "YOUR_PASSWORD", "RECIPIENTS_PASSWORD")
+#report = Report("YOUR_EMAIL", "YOUR_PASSWORD", "RECIPIENTS_PASSWORD")
 
 
 def get_new_currencies():
