@@ -36,7 +36,7 @@ class Analytics:
 
         if len(new_currencies) > 0:
             new_currencies_df = exchange_currencies_df.loc[exchange_currencies_df['Currency'].isin(new_currencies)]
-            #self.db.store_currencies(exchange_currencies_df)
+            self.db.store_currencies(exchange_currencies_df)
             return new_currencies_df
 
         self.logger.info("No new currencies have been added to Bittrex exchange.")
